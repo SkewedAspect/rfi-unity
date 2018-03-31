@@ -1,15 +1,18 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿// ----------------------------------------------------------------------------------------------------------------------
+// Behavior that destroys the attached particle system.
+// ----------------------------------------------------------------------------------------------------------------------
 
-public class PSDestroy : MonoBehaviour {
+using UnityEngine;
 
-	// Use this for initialization
-	void Start () {
-		Destroy(gameObject, GetComponent<ParticleSystem>().duration);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
+// ----------------------------------------------------------------------------------------------------------------------
+
+public class PSDestroy : MonoBehaviour
+{
+    // Use this for initialization
+    private void Start()
+    {
+        Destroy(this.gameObject, this.GetComponent<ParticleSystem>().main.duration);
+    } // end Start
+} // end PSDestroy
+
+// ----------------------------------------------------------------------------------------------------------------------

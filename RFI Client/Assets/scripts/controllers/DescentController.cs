@@ -52,7 +52,7 @@ namespace controllers
             var yawInput = false;
             var rollInput = false;
 
-            var localAngularVelocity = this.transform.InverseTransformDirection(this._body.angularVelocity);
+//            var localAngularVelocity = this.transform.InverseTransformDirection(this._body.angularVelocity);
 
             //----------------------------------------------------------------------------------------------------------
             // Handle Input
